@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <title>Pokedex</title>
+    <script src="pokedexLaunchX.js"></script>
+    <!--<link rel="stylesheet" href="./styles.css">-->
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+    <div class="pokedex">
+        <div class="pantallaIzq">
+            <div class="superiorIzq">
+                <div class="lucesSuperiores">
+                    <div class="luzGrande">
+                        <div class="luzGrandeBrillo"></div>
+                    </div>
+                    <div class="luzSuperior1">
+                        <div class="luzSuperiorBrillo1"></div>
+                    </div>
+                    <div class="luzSuperior2">
+                        <div class="luzSuperiorBrillo2"></div>
+                    </div>
+                    <div class="luzSuperior3">
+                        <div class="luzSuperiorBrillo2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pantallaContenido">
+                <div class="pantallaBorde">
+                    <div class="lucesPantalla">
+                        <div class="luzSuperiorPantalla"></div>
+                        <div class="luzSuperiorPantalla"></div>
+                    </div>
+                    <div class="pantalla">
+                        <div class="pokeId">                
+                            <span id="pokeNombre">???</span>
+                            <span id="pokeNumero">#000</span>
+                        </div>
+                        <div class="pokePicture">
+                            <img src="/pokeball.png" alt="Pokemon" id="pokeImg" width="120px">
+                        </div>
+                        <div class="types">
+                            <span id="type1" class="type">???</span>
+                            <span id="type2" class="type">???</span>
+                        </div>
+                    </div>
+                    <div class="luzBocinaSecction">
+                        <div class="luzInferiorPantalla"></div>
+                        <div class="bocina">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="inferiorIzq">
+                <div class="pantallaControles">
+                    <div class="joystick"></div>
+                    <div class="inputs">
+                        <div class="lucesControles">
+                            <div class="luzControlesIzq"></div>
+                            <div class="luzControlesDrch"></div>
+                        </div>
+                        <div class="pokeBusqueda">
+                            <input type="text" id="pokeName" placeholder="Nombre o numero..." > <br>
+                            <input type="button" onclick="fetchPokemon()" value="Buscar">
+                        </div>
+                    </div>
+                    <div class="botonCruz"></div>
+                </div>
+            </div>
+        </div>
+        <div class="division"></div>
+        <div class="pantallaDrch">
+            <div class="pantallaDesc"></div>
+            <div class="btnsNum">
+                <div class="btnsDrch">
+                    <div>0</div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+                <div class="btnsDrch">
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+            </div>
+            <div class="midDrch">
+                <div class="botonesDrch"></div>
+                <div class="lucesDrch">
+                    <div class="lucesSuperiores"></div>
+                    <div class="luzInferior"></div>
+                </div>
+            </div>
+            <div class="footerDrch"></div>
+        </div>
+    </div>
+
+
+    <!--
+    <div class="pokedex">
+        <div class="pokedexBody">
+            <div class="pokeBusqueda">
+                <input type="text" id="pokeName" placeholder="Nombre o numero del pokemon..." >
+                <input type="button" onclick="fetchPokemon()" value="Buscar">
+            </div>
+            <div class="pokeId">
+                <span id="pokeNombre">???</span>
+                <span id="pokeNumero">#000</span>
+            </div>
+            <div class="pokePicture">
+                <div>
+                    <img src="/pokeball.png" alt="Pokemon" id="pokeImg" width="120px">
+                </div>
+                <div class="types">
+                    <span id="type1" class="type">???</span>
+                    <span id="type2" class="type">???</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="pokedexFooter">
+            
+        </div>
+    </div>  
+
+    
+    <h1>Pokedex LaunchX</h1>
+
+    <input type="text" name="pokeName" placeholder="Pikachu" id="pokeName">
+    <h2 id="pokemonName"></h2>
+    <img src="/pokeball.png" alt="Pokemon" id="pokeImg" width="120px"><br>
+    <p id="type"></p>
+    <button onclick="fetchPokemon()">Cambiar Pokemon</button>
+    -->
+</body>
+</html>
